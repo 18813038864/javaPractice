@@ -8,7 +8,7 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class ProfilingAspect {
 
-    @Pointcut("execution(* aspectjDemo.ProfilingAspect.*(..))")
+    @Pointcut("execution(* aspectjDemo.model.Account.*(..))")
     public void modelLayer() {
     }
 

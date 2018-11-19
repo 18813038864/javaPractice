@@ -1,5 +1,7 @@
 package aspectjDemo;
 
+import aspectjDemo.model.Account;
+
 public class Application {
     public static void main(String[] args) {
         testCompileTime();

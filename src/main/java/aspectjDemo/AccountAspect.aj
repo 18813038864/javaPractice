@@ -1,9 +1,11 @@
 package aspectjDemo;
 
+import aspectjDemo.model.Account;
+
 public aspect AccountAspect{
 
     pointcut callPay(int amount, Account account):
-            call(boolean aspectjDemo.Account.pay(int)) && args(amount) && target(account);
+            call(boolean aspectjDemo.model.Account.pay(int)) && args(amount) && target(account);
 
     before(int amount, Account account): callPay(amount, account) {
         System.out.println("[AccountAspect]付款前总金额: " + account.balance);
