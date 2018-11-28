@@ -1,4 +1,4 @@
-package test.java;
+package threadDemo;
 
 public class MyThread extends Thread  {
     private int count = 5000;
